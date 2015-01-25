@@ -61,7 +61,7 @@ The algorithm actually peforms only does slightly worse on the testing subset th
 ## Predicting on the Test Set
 Finally, I use the algorithm to predict using the testing set.  The results are run through the `pml_write_files()` function from the course Coursera site, and stored for submission.  
 ```{r}
-pml.testing <- read.csv("~/R/Coursera /Machine Learning/Project/pml-testing.csv")
+pml.testing <- read.csv("c:/coursera/R programming/working directory/pml-testing.csv")
 answers <- as.character(predict(modFit, pml.testing))
 pml_write_files = function(x){
   n = length(x)
